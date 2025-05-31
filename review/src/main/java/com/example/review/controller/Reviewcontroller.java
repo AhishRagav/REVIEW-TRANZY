@@ -1,6 +1,7 @@
 package com.example.review.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,6 +11,7 @@ import com.example.review.model.Review;
 import com.example.review.service.ReviewService;
 
 @RestController
+@CrossOrigin
 public class Reviewcontroller {
     @Autowired
     public ReviewService reviewService;

@@ -25,7 +25,7 @@ public class ReviewService {
         for(int i=0;i<list.size();i++){
             sum+=list.get(i).getReview();
         }
-
-        return sum/(list.size());
+        int denominator=Math.max(list.size(),1);
+        return sum/denominator;
     }
 }

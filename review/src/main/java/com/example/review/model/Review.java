@@ -17,5 +17,6 @@ public class Review {
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     int reviewid;
     float review;
+    String comment;
 
 }
